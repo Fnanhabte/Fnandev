@@ -1,0 +1,50 @@
+@keyframes wordinfinit {
+   from{
+
+      transform: translateX(0%);
+   }
+   to {
+      opacity: 1;
+      transform: translateX(-100%);
+   }
+}
+@keyframes page404 {
+   from{
+
+      transform: translateX(0%);
+   }
+   to {
+      opacity: 1;
+      transform: translateX(-30%);
+   }
+}
+@keyframes wordinfinit2 {
+   from{
+
+      transform: translateX(0%);
+   }
+   to {
+      opacity: 1;
+      transform: translateX(-70%);
+   }
+}
+@keyframes langAnimation{
+   from{
+
+      transform: translateY(0%);
+   }
+   to {
+      opacity: 1;
+      transform: translateY(-3000%);
+   }
+}
+@keyframes  circle-rotate {
+   from{
+
+      transform:rotate(0deg);
+   }
+   to {
+      opacity: 1;
+      transform:rotate(360deg)
+   }
+}

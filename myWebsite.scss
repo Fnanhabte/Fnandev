@@ -1,0 +1,304 @@
+@font-face {
+   font-family: myfont;
+   src: url(TuskerGrotesk-2600Semibold.ttf);
+}
+@font-face {
+   font-family: migra;
+   src: url(Migra-Extrabold.ttf) format('woff');
+
+}
+@font-face {
+   font-family: pro;
+   src: url(ProgressPersonalUse-EaJdz.ttf) format('woff');
+}
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+html {
+   position: relative;
+   scroll-behavior: smooth;
+   // animation: main-load 3s cubic-bezier(0,.11,1,.11) forwards;
+   // top: -50rem;
+}
+noscript {
+   position: relative;
+   font-family: sans-serif;
+   font-weight: 600;
+   text-align: center;
+   left: 30vw;
+   color: whitesmoke;
+}
+.notSupported {
+   display: none;
+}
+html > body {
+position: relative;
+margin: 0;
+padding:0;
+width: 100%;
+height: 100vh;
+box-sizing: border-box;
+overflow-x: hidden;
+background:linear-gradient(120deg,
+#191818,
+#787272,
+whitesmoke);
+
+
+ & ::selection {
+   background: whitesmoke;
+   color: #191818;
+
+ }
+}
+
+html::-webkit-scrollbar {
+  color: red;
+  width: 0px;
+}
+
+header{
+   position: fixed;
+   background: transparent;
+   display: flex;
+   flex-flow: row wrap ;
+   width: 100%;
+   height: 12vh;
+   place-items:center;
+   gap: 1rem;
+   padding-left: 1rem;
+   z-index: 5555;
+   animation: header-top 2s ease forwards 3s;
+   transition: header-top 1s ease;
+   transform: translateY(-100rem);
+
+
+
+   & * {
+      color: whitesmoke;
+   }
+
+   h2 {
+      font-size: clamp(11px, 1.2vw, 12px);
+      font-family:  'Playfair Display', serif;
+      font-weight: 600;
+      flex-basis: 60%;
+      filter: grayscale(60%)sepia(5%);
+
+      & > .De{
+         color: #191818;
+         filter: grayscale(30%)sepia(10%);
+      }
+
+
+   }
+   h3 {
+      font-size: clamp(11px, 1.2vw, 12px);
+      font-family:  migra;
+      font-weight: 400;
+      flex-basis: 10%;
+      filter: grayscale(50%);
+
+
+      & > a {
+         text-decoration: none;
+      }
+
+   }
+
+   & nav ul {
+      display: flex;
+
+      & li {
+         list-style: none;
+         flex-shrink: 2;
+
+
+
+         & a  {
+            text-decoration: none;
+            font-family:  'Playfair Display', serif;
+            font-size: clamp(12px, 1.2vw, 12px);
+            margin: .2rem;
+            filter: grayscale(60%)sepia(5%);
+            transform: translateY(-100rem);
+            animation: header-top 5s ease forwards 5s;
+
+
+            &:hover {
+               cursor: pointer;
+               text-decoration: line-through 1px black;
+               transition: all 0.50s linear;
+            }
+         }
+
+
+      }
+
+   }
+
+   & [class ^= "progress"]{
+      background: transparent;
+      flex-basis: 95%;
+      height: 0.20vh;
+      margin-block-start: 1.4vh;
+      margin-inline-start: 3rem;
+
+
+   }
+
+}
+
+[class^="links-bracket"]{
+   display: inline-block;
+   color: #1a1a1a;
+   filter: grayscale(50%)sepia(60%);
+   transform: translate(-1000rem);
+   animation: textPopup 2s ease forwards 5s;
+}
+
+ main {
+ position:relative;
+ width: 100%;
+ height: 100vh;
+ display: inline-block;
+ z-index: 0;
+box-sizing: border-box;
+overflow: hidden;
+background:linear-gradient(32deg,
+SEASHELL,
+SEASHELL,
+SEASHELL);
+
+
+
+
+ .main-wrapper{
+   padding: 0rem;
+   box-sizing: border-box;
+   overflow: hidden;
+
+   .letter-cover{
+      position: relative;
+      width: 100%;
+      height: 90vh;
+      margin-block-start: -7rem;
+      box-sizing: border-box;
+      background:linear-gradient(to left, #00000096, #00000093,#000000), url(./images/herobg-hd@2x.jpg);
+      background-size: cover;
+      background-position: center center;
+      max-width: 100%;
+      transition: all 1s ease;
+
+
+   }
+
+
+   & [class='designer']{
+      color: #f8f8ff;
+      font-size: clamp(2rem,8rem , 12rem);
+      width: 40vw;
+      font-family: myfont;
+      font-weight: 400;
+      text-transform: uppercase;
+      filter: grayscale(60%)sepia(5%);
+
+
+
+      & [class="desigNer"]{
+         position: relative;
+         color: whitesmoke;
+         clip-path: inset(0 -90% 100% 0);
+         letter-spacing: 10px;
+         top: 5rem;
+         padding-left: 1rem;
+      }
+      & [class="developer"] {
+         margin-block-start: -8rem;
+         margin-inline-start: 10rem;
+         letter-spacing: 45px;
+         clip-path: inset(0 -90% 100% 0);
+      }
+
+      & > span {
+         position: relative;
+         color: ghostwhite;
+         font-size: 1.5rem;
+         margin: -0rem 0rem 0 21rem;
+         top: -10rem;
+         clip-path: inset(0 -90% 100% 0);
+
+      }
+
+      & *, > .desigNer,.middleTag,.developer {
+        animation: textPopup 2s ease forwards 3s;
+        transition: animation 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+      }
+
+   }
+ }
+
+ h2 {
+   font-family:  'Playfair Display', serif;
+   font-size: clamp(12px,1.2vw , 12px);
+   font-weight: 400;
+   color: #fbf2e1;
+   margin-inline-start: 50rem;
+   margin-inline-end: 10px;
+   margin-block-start: -12rem;
+   text-align:right;
+   line-height: 1.5;
+   clip-path: inset(0% 50% 0% 50%);
+   animation: sum 2s ease forwards 5s;
+   transition: animation 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+ }
+
+ p {
+   position: relative;
+   margin-inline-end:2rem;
+   top: -1rem;
+   overflow: hidden;
+   border-radius: 50px;
+   float: right;
+   animation: sum 2s ease forwards 5s;
+   transition: animation 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+   opacity: 0;
+
+
+   & a {
+      display: inline-block;
+      font-family:  'Playfair Display', serif;
+      font-size: clamp(1rem, 5vw, 1.3rem);
+      text-decoration: none;
+      border: 2px solid whitesmoke;
+      border-radius: 50px;
+      cursor: pointer;
+      filter: grayscale(60%)sepia(5%);
+      padding: 0.20rem 0.1rem;
+      white-space: nowrap;
+      width: 10rem;
+
+
+
+
+
+      & > .infinit-text {
+         color: #fbf2e1;
+         display: inline-block;
+         padding-left: 1rem;
+
+      }
+
+   }
+ }
+
+
+
+}
+
+@import './firstPageAneImages';
+@import './sectionThreeAnimstion';
+@import './secondPageAnim';
+@import './sectionOne';
+@import './sectionTwo';
+@import './sectionThree';
+@import './AllMediaQuiery';

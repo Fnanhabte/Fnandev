@@ -1,0 +1,132 @@
+.section-one{
+   position: relative;
+   display: grid;
+   width: 100%;
+   height: 100vh;
+   grid-template-columns: repeat(auto-fit,minmax(500px, 1fr));
+   grid-template-rows: repeat(3, minmax(500px, 600px));
+   background: #1a1818;
+   overflow: hidden;
+   background:linear-gradient(32deg,
+   SEASHELL,
+   SEASHELL,
+   SEASHELL);
+
+
+   .grid-container{
+      position: relative;
+      height: 100vh;
+      background:transparent;
+      box-sizing: border-box;
+      margin-block-start: 0rem;
+
+
+   }
+   .first {
+      background: transparent;
+      padding: 4rem 6vw;
+      box-sizing: border-box;
+      width: 100%;
+
+
+
+      & h1 > .myName {
+         display: block;
+         position: relative;
+         color: #1a1818;
+         font-size: clamp(5.8rem,5vw , 5rem);
+         font-family: myfont;
+         font-weight: 400;
+         clip-path: inset(0% 0% 100% 0%);
+         filter: grayscale(60%)sepia(5%);
+      }
+
+      [class^='fullname']{
+         position: relative;
+         display: block;
+         font-size: clamp(15px,1vw,0.2rem);
+         font-family:  migra;
+         font-weight: 200;
+         color:#1a1818;
+         opacity: 0;
+         clip-path: inset(0% 0% 0% 0%);
+         top: -5px;
+
+      }
+
+      & h3 {
+         color:#1a1818;
+         font-family:  'Playfair Display', serif;
+         font-size: clamp(13px,1vw , 20px);
+         font-weight:600 ;
+         margin-block-start: 4rem;
+         text-indent: 12vw;
+         filter: grayscale(10%)sepia(2%);
+         line-height: 1.8;
+         text-align: justify;
+         word-spacing: 0px;
+         clip-path: inset(50% 0 50% 0);
+      }
+   }
+
+   .second {
+      position: relative;
+      padding: 6rem 25vw;
+      box-sizing: border-box;
+      overflow: hidden;
+
+      .quote-wrapper {
+         display: flex;
+         position: absolute;
+         z-index: 5;
+      }
+      .myPhoto {
+         position: relative;
+         width: 250px;
+         height: 250px;
+         border-radius: 150px;
+         background: url(./images/sahra4.jpg) no-repeat;
+         background-position: center center;
+         background-size: cover;
+         left: -7.8rem;
+         top: 5rem;
+      }
+   }
+
+}
+ #quote {
+   display: block;
+  position: absolute;
+  pointer-events: none;
+  user-select: none;
+  width: 0px;
+  height: 380px;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+  animation:  text-rotate 25s linear infinite;
+  transition: animation 2s linear;
+}
+em{
+   width: 10px;
+   height: 10px;
+position: absolute;
+transform-origin: 0px 190px;
+text-transform: uppercase;
+color: #1a1818;
+}
+
+.first h1 > span.active {
+   animation: text-animtion 1s ease-out forwards 1s;
+   transition: animation 1s ease-out;
+}
+.first h3.active {
+    animation: h3-animation 1s ease-out forwards 0s;
+   transition: animation 1s ease-out;
+}
+
+.first h1 > [class^='fullname']{
+animation: text-animtion 1s ease-out forwards 1s;
+transition: animation 1s ease-out;
+}
+

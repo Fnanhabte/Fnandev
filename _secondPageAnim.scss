@@ -1,0 +1,47 @@
+@keyframes  work-title {
+   0% {
+      opacity: 0;
+   }
+   50%{
+      filter: blur(10px);
+      letter-spacing: 12em;
+   }
+   100% {
+      right: 0;
+      left: 0;
+   }
+}
+@keyframes  the-line {
+   0% {
+      opacity: 0;
+   }
+   50% {
+      transform: rotate(500deg);
+   }
+   100% {
+      opacity: 1;
+      width: 90%;
+   }
+}
+
+@keyframes work {
+   0% {
+      opacity: 0;
+   }
+   100% {
+      opacity: 1;
+      transform: translateY(0%);
+   }
+}
+@keyframes  animWords  {
+   0% {
+      opacity: 0;
+   }
+   100% {
+      opacity: 1;
+      clip-path: inset(0% 0% 16% 0%);
+   }
+}
+
+
+

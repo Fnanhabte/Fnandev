@@ -1,0 +1,284 @@
+.section-three {
+   position: relative;
+   width: 100%;
+   height: 145vh;
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+   grid-template-rows: minmax(150px,150px) minmax(180px, 500px) minmax(60px, 60px) minmax(190px, 190px);
+   overflow: hidden;
+
+         background:linear-gradient(130deg,
+         orangered,
+         orangered,
+         orangered,
+         #151414,
+         #151414,
+         #151414,
+         #151414,
+         #151414,
+         #151414,);
+
+
+
+   .skill-tools{
+      position: relative;
+      padding: 0rem 5rem;
+      box-sizing: border-box;
+      filter: grayscale(20%)sepia(20%);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+          background:linear-gradient(to left, #00000000, #00000000,#00000075), url(./images/films.png) no-repeat;
+         background-position: center center;
+         background-size: cover;
+
+      .skill-info-wrapper {
+
+         & .skill-info {
+            display: block;
+            text-align: center;
+            font-size: clamp(8rem,5vw , 8rem);
+            font-family: myfont;
+            border-bottom: transparent;
+            letter-spacing: 1px;
+            clip-path: inset(0% 0% 20% 0%);
+            // border: 5px solid red;
+            border-right: transparent;
+            color: ghostwhite;
+            text-transform: uppercase;
+
+         }
+      }
+      .lang-wrapper {
+         box-sizing: border-box;
+         padding: 0rem 0.10rem;
+         border-right: 5px solid rgb(206, 0, 0);
+         overflow: hidden;
+         background: ghostwhite;
+         box-shadow: inset -0px -210px 120px 0px #101010;
+         background:linear-gradient(to left, #00000000, #00000000,#00000075), url(./images/mypaint.png) no-repeat;
+         background-position: center center;
+         background-size: cover;
+
+
+         & .lang {
+            text-align: center;
+            display: block;
+            color: #dfdfe2;
+            font-size: clamp(3rem,2vw , 3rem);
+            font-family: myfont;
+            text-transform: uppercase;
+            animation: langAnimation 28s linear infinite ;
+
+         }
+      }
+
+   }
+
+   .skillsets{
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      height: 10vh;
+
+      & .toolbox-text {
+         display: inline-block;
+         font-size: clamp(8rem,5vw , 8rem);
+         font-family: myfont;
+         white-space: nowrap;
+         margin-block-start: -37px;
+         filter: grayscale(60%)sepia(5%);
+         color: #dfdfe2;
+         text-transform: uppercase;
+         animation:  wordinfinit 45s linear infinite;
+      }
+
+
+   }
+
+   .question{
+      background:linear-gradient(130deg,
+      orangered,
+      orangered,
+      orangered,
+      #151414,
+      #151414,
+      #151414,
+      #151414,
+      #151414,
+      #151414,);
+
+       & > p {
+         text-align: center;
+         font-size: clamp(14px,2vw , 14px);
+         font-family:  'Playfair Display', serif;
+         filter: grayscale(60%)sepia(5%);
+         color: #dfdfe2;
+
+       }
+   }
+
+   .emails-wrapper {
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      background: #101010;
+      justify-content: flex-start;
+      background:linear-gradient(110deg,
+    #151414,
+    #151414,
+    orangered,
+    orangered,);
+
+
+      > .intrest {
+      font-size: clamp(8rem,5vw , 8rem);
+      font-family: myfont;
+      white-space: nowrap;
+      margin-block-start: 0rem;
+      animation: wordinfinit2 48s linear infinite ;
+      filter: grayscale(60%)sepia(5%);
+      color: #dfdfe2;
+      }
+   }
+
+
+
+}
+
+footer {
+   position: relative;
+   display: grid;
+   width: 100%;
+   height: 95vh;
+   background: #101010;
+   overflow: hidden;
+
+   .footer-email{
+      position: relative;
+      color: #dfdfe2;
+      background: url(./images/darkFilm.jpg)no-repeat;
+      background-size: cover;
+      background-position: center center;
+   }
+
+   .arrow-up{
+      position: absolute;
+      width: 20%;
+      height: 10vh;
+      left: 7vw;
+      top: 15rem;
+
+       > a {
+         position: relative;
+         left: 12vw;
+         background: url(./images/arrow-up.svg)no-repeat;
+         background-size: cover;
+         background-position: center center;
+         padding: 1.2rem;
+         cursor: pointer;
+         outline: none;
+         &::after {
+            content: 'SCROLL UP';
+            position: absolute;
+            white-space: nowrap;
+            font-size: clamp(22px,3vw , 22px);
+            bottom: -1rem;
+            font-family: myfont;
+            letter-spacing: 1px;
+            color: #dfdfe2;
+            clip-path: inset(28% 100% 31% 0);
+         }
+
+         &:hover::after{
+            color: #ca7f0fac;
+            transition: all 1s linear;
+            clip-path: inset(0 0 0 0);
+         }
+
+       }
+   }
+
+   h1 {
+      position: absolute;
+      text-align: center;
+      font-size: clamp(3rem,3vw , 3rem);
+      font-family: myfont;
+      letter-spacing: 0.50px;
+      text-transform: uppercase;
+      animation: circle-rotat 10s linear infinite ;
+      color: orangered;
+      display: block;
+      width: 0px;
+      height: 470px;
+      left: 22vw;
+      animation:  text-rotate 25s linear infinite;
+      transition: animation 2s linear;
+   }
+
+   .socialLinks{
+      padding: 10rem 12rem;
+      box-sizing: border-box;
+      float: right;
+      display: flex;
+      flex-direction: row;
+      justify-content:left;
+      gap: 1rem;
+      word-wrap: wrap;
+
+
+
+      & > a {
+         position: relative;
+         text-decoration: none;
+         font-size: clamp(17px,3vw , 35px);
+         font-family: myfont;
+         color: #dfdfe2;
+         left: 20vw;
+         margin-inline-start: 5rem;
+
+         &:hover {
+            transition: all 2s linear;
+            text-decoration: line-through black 2px;
+         }
+      }
+      > a:nth-of-type(2n){
+         color: orangered;
+      }
+
+      & > h4 {
+         position: relative;
+         font-size: clamp(1rem,2vw , 1.8rem);
+         font-family: myfont;
+         filter: grayscale(20%)sepia(20%);
+         text-transform: uppercase;
+         letter-spacing: 1px;
+         left: 1vw;
+         margin-block-start: 3rem;
+
+         & > a{
+            text-decoration: none;
+            color: whitesmoke;
+
+            &:hover {
+               transition: all 1s linear;
+               border-bottom: 1px solid peru;
+            }
+         }
+
+
+      }
+   }
+}
+
+#email span[class='active']{
+position: absolute;
+transform-origin: 0px 240px;
+width: 10px;
+height: 10px;
+
+}
+
+mark {
+   background: whitesmoke;
+}
+
