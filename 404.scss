@@ -70,7 +70,7 @@ main {
 }
 
 
-@media (0px <= width <= 430px) {
+@media all and (min-width: 0px) and (max-width: 430px){
 
    main {
       background: #000;
