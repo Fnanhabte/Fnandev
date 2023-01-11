@@ -68,3 +68,33 @@ main {
       }
    }
 }
+
+
+@media (0px <= width <= 430px) {
+
+   main {
+      background: #000;
+
+      & > .notfound  {
+         background: #000;
+
+         & h1 {
+            font-size: 3.5rem;
+         }
+         & h2 {
+           display: none;
+         }
+         p {
+
+            & > a   {
+                  background: firebrick;
+                  color: #000;
+                  border-radius: 2px;
+                  font-family: Georgia, 'Times New Roman', Times, serif;
+            }
+
+         }
+      }
+   }
+
+}
